@@ -97,12 +97,18 @@ body {
 	text-align: center;
 	padding-block: 2em;
 }
+
+.gallery-title {
+	text-align: center;
+	padding-block: 2em;
+	font-size: 30px;
+}
 .gallery .nav {
 	justify-content: center;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
-	background-color: #BEB45A;
+	background-color: #5B6A1F;
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
@@ -160,6 +166,13 @@ body {
 	background-color: #A8D5D8 ;
 	position: relative;
 }
+
+.services-title {
+	text-align: center;
+	padding-block: 2em;
+	font-size: 30px;
+}
+
 #services .container::before{
 	content: ' ';
 	background-color: #1C6474;
@@ -256,6 +269,10 @@ footer {
 footer p {
 	margin: 0;
 	padding: 1em 0;
+}
+
+.phonenumber {
+	font-weight: 800;
 }
 
 @media all and (max-width: 1180px) {
@@ -367,4 +384,3 @@ footer p {
 		width: 80%;
 	}
 }
-
