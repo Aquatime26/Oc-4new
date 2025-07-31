@@ -147,6 +147,18 @@ body {
 	font-size: 24px;
 }
 
+.modal-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightboxImage {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
 .quote {
 	font-family: 'Spectral';
 	font-style: italic;
