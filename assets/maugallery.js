@@ -13,7 +13,7 @@
       }
       $.fn.mauGallery.listeners(options);
 
-      $(this)
+          $(this)
         .children(".gallery-item")
         .each(function(index) {
           $.fn.mauGallery.methods.responsiveImageItem($(this));
@@ -48,6 +48,7 @@
     tagsPosition: "bottom",
     navigation: true
   };
+ 
   $.fn.mauGallery.listeners = function(options) {
     $(".gallery-item").on("click", function() {
       if (options.lightBox && $(this).prop("tagName") === "IMG") {
@@ -65,6 +66,7 @@
       $.fn.mauGallery.methods.nextImage(options.lightboxId)
     );
   };
+
   $.fn.mauGallery.methods = {
     createRowWrapper(element) {
       if (
@@ -105,6 +107,23 @@
         );
       }
     },
+    refreshTags(galleryElement, options) {
+      const tagsCollection = [];
+
+      galleryElement.find(".gallery-item").each(function () {
+        const tag = $(this).data("gallery-tag");
+        if (options.showTags && tag && !tagsCollection.includes(tag)) {
+          tagsCollection.push(tag);
+        }
+      });
+
+      $.fn.mauGallery.methods.showItemTags(
+        galleryElement,
+        options.tagsPosition,
+        tagsCollection
+      );
+    },
+
     moveItemInRowWrapper(element) {
       element.appendTo(".gallery-items-row");
     },
@@ -212,7 +231,7 @@
         return;
       }
       $(".active-tag").removeClass("active active-tag");
-      $(this).addClass("active-tag");
+      $(this).addClass("active active-tag");
 
       var tag = $(this).data("images-toggle");
 
