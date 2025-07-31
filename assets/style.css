@@ -108,12 +108,17 @@ body {
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
-	background-color: #5B6A1F;
+	background-color: #9E6A1F;
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
 	color: #000
 }
+
+.nav-item :hover {
+	cursor: pointer;
+}
+
 .item-column {
 	position: relative;
 	margin-bottom: 0 !important;

@@ -5,6 +5,7 @@
 	<meta name="description" content="Nina Carducci, photographe professionnelle, spécialisée dans les portraits, les mariages et les événements d'entreprise. Découvrez son portfolio et ses services.">
 	<meta name="author" content="Nina Carducci">
 	<meta robots="index, follow">
+	
 	<meta property="og:image" content="https://www.instagram.com/ninacarducci.photo/?hl=fr" />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
@@ -20,6 +21,26 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./assets/maugallery.js" defer></script>
 	<script src="./assets/scripts.js" defer></script>
+
+	<script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Nina Carducci",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "68 avenue Alsace-Lorraine",
+                "postalCode": "33200",
+                "addressLocality": "Bordeaux",
+                "addressRegion":"Nouvelle-Aquitaine",
+                "addressCountry": "FR"
+            },
+            "telephone": "05 56 67 78 89",
+            "image": "https://Nina_Carducci/assets/images/nina-carducci-photographe.avif",
+            "openingHours": "Mo-Fr 10:00-19:00",
+            "priceRange": "50€-350€-400€"
+        }
+    </script>
 </head>
 <body>
 <div class="top-header">
@@ -167,11 +188,11 @@
 <footer>
 	<div class="container">
 		<p>© 2023 Nina Carducci - Tous droits réservés</p>
-		<p><div itemprop=”address” itemscope itemtype=”http://schema.org/PostalAddress”>
+		<p>
 			<span itemprop=”streetAddress”>68 avenue Alsace-Lorraine</span>,
 			<span itemprop=”addressLocality”>Bordeaux</span>
 			<span itemprop=”postalCode”>33200</span>
-			</div></p>
+		</p>
 		<p>Contact : <h3 class="phonenumber">05 56 67 78 89</h3> du Lundi au Vendredi de 10 h à 19 h</p>
 	</div>
 </footer>
