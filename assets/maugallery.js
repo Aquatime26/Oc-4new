@@ -13,7 +13,7 @@
       }
       $.fn.mauGallery.listeners(options);
 
-          $(this)
+      $(this)
         .children(".gallery-item")
         .each(function(index) {
           $.fn.mauGallery.methods.responsiveImageItem($(this));
