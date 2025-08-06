@@ -11,6 +11,11 @@
           options.navigation
         );
       }
+       $('#myAwesomeLightbox').on('hide.bs.modal', function () {
+        if (document.activeElement) {
+          document.activeElement.blur();
+        }
+      });
       $.fn.mauGallery.listeners(options);
 
       $(this)
@@ -189,10 +194,10 @@
     createLightBox(gallery, lightboxId, navigation) {
       gallery.append(`<div class="modal fade" id="${
         lightboxId ? lightboxId : "galleryLightbox"
-      }" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-body">
+      }" tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDesc">
+              <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                      <div class="modal-body">
                             ${
                               navigation
                                 ? '<div class="mg-prev" style="cursor:pointer;position:absolute;top:50%;left:-15px;background:white;"><</div>'
@@ -201,13 +206,13 @@
                             <img class="lightboxImage img-fluid" alt="Contenu de l'image affichée dans la modale au clique"/>
                             ${
                               navigation
-                                ? '<div class="mg-next" style="cursor:pointer;position:absolute;top:50%;right:-15px;background:white;}">></div>'
+                                ? '<div class="mg-next" style="cursor:pointer;position:absolute;top:50%;right:-15px;background:white;">></div>'
                                 : '<span style="display:none;" />'
                             }
-                        </div>
-                    </div>
-                </div>
-            </div>`);
+                      </div>
+                  </div>
+              </div>
+          </div>`);
     },
     showItemTags(gallery, position, tags) {
       var tagItems =
