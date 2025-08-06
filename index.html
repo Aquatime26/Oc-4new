@@ -2,19 +2,19 @@
 <html lang="fr">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Nina Carducci, photographe professionnelle, spécialisée dans les portraits, les mariages et les événements d'entreprise. Découvrez son portfolio et ses services.">
+	<meta name="description" content="Nina Carducci, photographe professionnelle à Bordeaux. Spécialiste des portraits, mariages et événements d'entreprise. Découvrez son portfolio et ses services.">
 	<meta name="author" content="Nina Carducci">
 	<meta name="robots" content="index, follow">
 	
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Nina Carducci - Photographe" />
-	<meta property="og:description" content="Nina Carducci, photographe professionnelle" />
+	<meta property="og:description" content="Nina Carducci, photographe professionnelle à Bordeaux. Spécialiste des portraits, mariages et événements d'entreprise. Découvrez son portfolio et ses services." />
 	<meta property="og:url" content="https://aquatime26.github.io/Oc-4new/" />
 	<meta property="og:image" content="https://aquatime26.github.io/Oc-4new/assets/images/nina-carducci-photographe.avif" />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
 	<meta name="twitter:title" content="Nina Carducci - Photographe" />
-	<meta name="twitter:description" content="Nina Carducci, photographe professionnelle" />
+	<meta name="twitter:description" content="Nina Carducci, photographe professionnelle à Bordeaux. Spécialiste des portraits, mariages et événements d'entreprise. Découvrez son portfolio et ses services." />
 	<meta name="twitter:url" content="https://aquatime26.github.io/Oc-4new/" />
 	<meta name="twitter:image" content="https://aquatime26.github.io/Oc-4new/assets/images/nina-carducci-photographe.avif" />
 
@@ -34,7 +34,7 @@
 	<script type="application/ld+json">
         {
             "@context": "http://schema.org",
-            "@type": ["LocalBusiness","Photographer"]
+            "@type": ["LocalBusiness","Photographer"],
             "name": "Nina Carducci",
             "address": {
                 "@type": "PostalAddress",
@@ -61,8 +61,8 @@
 			<li><a href="#gallery">Galerie</a></li>
 			<li><a href="#services">Service</a></li>
 			<li><a href="#contact">Contact</a></li>
-			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank" rel="noopener noreferrer">
-  			<img src="assets/images/instagram.png" alt="Lien vers la page Instagram de Nina Carducci"></a></li>
+			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" title="Lien vers la page Instagram de Nina Carducci" target="_blank" rel="noopener noreferrer">
+  			<img src="assets/images/instagram.png" alt="Logo Instagram"></a></li>
 		</ul>
 	</nav>
 		</div>
@@ -97,7 +97,7 @@
 		</div>
 		<div id="about">
 	<div class="picture left">
-		<img class="nina-picture" src="./assets/images/nina.avif" width="347" height="490" alt="Nina Carducci, photographe détentrice du site et des droits d'auteur">
+		<img class="nina-picture" src="./assets/images/nina.avif"  alt="Nina Carducci, photographe détentrice du site et des droits d'auteur">
 	</div>
 	<div id="about-me">
 		<h2 class="about-me__title">A propos de moi</h2>
@@ -196,16 +196,16 @@
 		</div>
 	</main>
 	<footer>
-		<div class="container">
+		<div class="container" itemscope itemtype="https://schema.org/LocalBusiness">
 			<h2>© 2023 Nina Carducci - Photographe - Tous droits réservés</h2>
-			<p>
-			<span itemprop="streetAddress">68 avenue Alsace-Lorraine</span>,
-			<span itemprop="addressLocality">Bordeaux</span>
-			<span itemprop="postalCode">33200</span>
+			<p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+				<span itemprop="streetAddress">68 avenue Alsace-Lorraine</span>,
+				<span itemprop="addressLocality">Bordeaux</span>
+				<span itemprop="postalCode">33200</span>
 			</p>
 			<h3>Contact :</h3> 
-			<h4 class="phonenumber">05 56 67 78 89</h4> 
-			<h5>du Lundi au Vendredi de 10h à 19h</h5>
+			<h4 class="phonenumber" itemprop="telephone">05 56 67 78 89</h4> 
+			<h5 itemprop="openingHours">du Lundi au Vendredi de 10h à 19h</h5>
 		</div>
 	</footer>
 </body>
